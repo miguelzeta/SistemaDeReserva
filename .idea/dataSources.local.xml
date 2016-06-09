@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="SQL Server - db-SistemaDeReserva@localhost" uuid="52a2ceae-fa29-49f3-afeb-e36cd973507d">
+      <secret-storage>master_key</secret-storage>
+      <user-name>sa</user-name>
+      <schema-pattern>db-SistemaDeReserva.*</schema-pattern>
+      <default-schemas>db-SistemaDeReserva.*</default-schemas>
+    </data-source>
+  </component>
+</project>
