@@ -71,7 +71,6 @@ class UsersController extends Controller
     {
 
 
-        //echo 'updating!!';
 
 
 
@@ -88,7 +87,7 @@ class UsersController extends Controller
         $varuser->save();
 
         //Flash::success("Se ha editado a:  " . $varuser->nombre . "  ,de forma exitosa");
-        //return redirect()->route('Cliente.User.index');
+        return redirect()->route('Cliente.User.index');
     }
 /*
  *
@@ -97,7 +96,7 @@ class UsersController extends Controller
     // ELIMINA UN USUARIO
     public function destroy($id)
     {
-        $varuser = User::find($id);
+        $varuser =User::findOrFail($id);
         $varuser -> delete();
 
         //Flash::success("Se ha eliminado a:  " . $varuser->nombre . "  ,de forma exitosa");

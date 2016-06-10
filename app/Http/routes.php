@@ -36,6 +36,14 @@ Route::group(['middleware'=>['web']],function(){
     });
     Route::group(['prefix'=>'Cliente'], function(){
         Route::resource('User','UsersController');
+
+        Route::get('User/{RutUsuario}/destroy',[
+            'uses'=>'UsersController@destroy',
+            'as'=>'Cliente.User.destroy'
+
+        ]);
+
+
     });
 });
 
