@@ -1,4 +1,4 @@
-@extends('Cliente.app')
+@extends('Administrador.app')
 
 @section('title','Editando Usuario ')
 
@@ -21,11 +21,11 @@
             {!! Form::text('name',$usuario->name,['class'=>'form-control','required']) !!}
         </div>
         <div class="form-group">
-            {!! Form::label('DireccionUsuario','Nombre') !!}
+            {!! Form::label('DireccionUsuario','Dirección') !!}
             {!! Form::text('DireccionUsuario',$usuario->DireccionUsuario,['class'=>'form-control','required']) !!}
         </div>
         <div class="form-group">
-            {!! Form::label('FonoUsuario','Nombre') !!}
+            {!! Form::label('FonoUsuario','Fono') !!}
             {!! Form::text('FonoUsuario',$usuario->FonoUsuario,['class'=>'form-control','required']) !!}
         </div>
         <div class="form-group">
@@ -41,7 +41,7 @@
 
 
         <div class="form-group">
-            {!! Form::label('ComunaUsuario', 'Asignatura',['class'=>'control-label']) !!}
+            {!! Form::label('ComunaUsuario', 'ComunaUsuario',['class'=>'control-label']) !!}
             {!! Form::text('ComunaUsuario', $usuario->ComunaUsuario,['class'=>'form-control','required']) !!}
         </div>
 
@@ -56,3 +56,4 @@
 
     </div>
 @endsection
+

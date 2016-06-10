@@ -14,16 +14,15 @@ class Medico extends Migration
     {
         Schema::create('medico', function (Blueprint $table) {
             $table->string('RutUsuario')->notnull();
-            $table->string('IdePrevision')->notnull();
             $table->string('name')->notnull();
-            $table->string('DireccionUsuario')->notnull();
-            $table->string('FonoUsuario')->notnull();
+            $table->string('DireccionUsuario')->nullable();
+            $table->string('FonoUsuario')->nullable();
             $table->string('email')->notnull();
             $table->string('ApellidoPaternoUsuario')->notnull();
-            $table->string('ApellidoMaternoUsuario')->notnull();
-            $table->string('ComunaUsuario');
+            $table->string('ApellidoMaternoUsuario')->nullable();
+            $table->string('ComunaUsuario')->nullable();
             $table->string('password')->notnull();
-            $table->string('DetallePerfilMedico')->notnull();
+            $table->string('DetallePerfilMedico')->nullable();
             $table->rememberToken();
             $table->timestamps();
 

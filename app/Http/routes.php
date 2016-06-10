@@ -28,38 +28,37 @@ Route::group(['middleware'=>['web']],function(){
 
 
     Route::group(['prefix'=>'Administrador'], function(){
-        Route::resource('Admin','AdminController');
+
+        Route::get('Admin', function() {
+            return view('Administrador.app');
+        });
     });
+
 
     Route::group(['prefix'=>'Medico'], function(){
         Route::resource('Medic','MedicController');
+
+        Route::get('Medic/{RutUsuario}/destroy',[
+            'uses'=>'MedicController@destroy',
+            'as'=>'Medico.Medic.destroy'
+        ]);
     });
+
+
     Route::group(['prefix'=>'Cliente'], function(){
         Route::resource('User','UsersController');
 
         Route::get('User/{RutUsuario}/destroy',[
             'uses'=>'UsersController@destroy',
             'as'=>'Cliente.User.destroy'
-
         ]);
-
-
     });
+
+
+
+    Route::resource('Admin','MedicController');
+
+
 });
 
-//Route::get('editar/{id}','UsersController@edit');
-//Route::post('update/{id}','UsersController@update');
-/*
-  Route::get('administrador', function (){
-      return view('Administrador.app');
-  });
 
-Route::get('cliente', function (){
-      return view('Cliente.app');
-  });
- Route::group(['prefix'=>'Cliente'], function(){
-        Route::resource('User','UsersController');
-    });
-  Route::get('medico', function (){
-      return view('Medico.app');
-  });*/

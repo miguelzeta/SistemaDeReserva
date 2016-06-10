@@ -1,4 +1,4 @@
-@extends('Cliente.app')
+@extends('Administrador.app')
 @section('content')
 @section('title','Lista de Usuarios')
 

@@ -1,13 +1,13 @@
-@extends('layouts.app')
+@extends('Administrador.app')
 
 @section('content')
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Registro</div>
+                    <div class="panel-heading">Registro de nuevo Médico</div>
                     <div class="panel-body">
-                        <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                        <form class="form-horizontal" role="form" method="POST" action="{{ url('/Admin') }}">
                             {{ csrf_field() }}
                             <div class="form-group{{ $errors->has('RutUsuario') ? ' has-error' : '' }}">
                                 <label for="RutUsuario" class="col-md-4 control-label">Rut</label>
@@ -39,50 +39,6 @@
                                     @if ($errors->has('ApellidoPaternoUsuario'))
                                         <span class="help-block">
                                         <strong>{{ $errors->first('ApellidoPaternoUsuario') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-                            <div class="form-group{{ $errors->has('ApellidoMaternoUsuario') ? ' has-error' : '' }}">
-                                <label for="ApellidoMaternoUsuario" class="col-md-4 control-label">Apellido Materno</label>
-                                <div class="col-md-6">
-                                    <input id="ApellidoMaternoUsuario" type="text" class="form-control" name="ApellidoMaternoUsuario" value="{{ old('ApellidoMaternoUsuario') }}"  required/>
-                                    @if ($errors->has('ApellidoMaternoUsuario'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('ApellidoMaternoUsuario') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-                            <div class="form-group{{ $errors->has('DireccionUsuario') ? ' has-error' : '' }}">
-                                <label for="DireccionUsuario" class="col-md-4 control-label">Direccion</label>
-                                <div class="col-md-6">
-                                    <input id="DireccionUsuario" type="text" class="form-control" name="DireccionUsuario" value="{{ old('DireccionUsuario') }}"  required/>
-                                    @if ($errors->has('DireccionUsuario'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('DireccionUsuario') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-                            <div class="form-group{{ $errors->has('ComunaUsuario') ? ' has-error' : '' }}">
-                                <label for="ComunaUsuario" class="col-md-4 control-label">Comuna</label>
-                                <div class="col-md-6">
-                                    <input id="ComunaUsuario" type="text" class="form-control" name="ComunaUsuario" value="{{ old('ComunaUsuario') }}" required/>
-                                    @if ($errors->has('ComunaUsuario'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('ComunaUsuario') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-                            <div class="form-group{{ $errors->has('FonoUsuario') ? ' has-error' : '' }}">
-                                <label for="FonoUsuario" class="col-md-4 control-label">Telefono</label>
-                                <div class="col-md-6">
-                                    <input id="FonoUsuario" type="text" class="form-control" name="FonoUsuario" value="{{ old('FonoUsuario') }}" required/>
-                                    @if ($errors->has('FonoUsuario'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('FonoUsuario') }}</strong>
                                     </span>
                                     @endif
                                 </div>
