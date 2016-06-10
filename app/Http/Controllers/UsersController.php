@@ -67,11 +67,11 @@ class UsersController extends Controller
     }
 
     // ACTUALIZA LA INFORMACION DEl FORMULARIO EDITA
-    public function update($id)
+    public function update(UserRequest $request,$id)
     {
 
 
-        echo 'updating!!';
+        //echo 'updating!!';
 
 
 
@@ -79,13 +79,13 @@ class UsersController extends Controller
 
 
 
-        //$varuser = User::find($id);
-        //$varuser->fill($request->all());
+        $varuser = User::find($id);
+        $varuser->fill($request->all());
         /*$varuser->nombre = $request->nombre;
         $varuser->apellido_paterno = $request->apellido_paterno;
         $varuser->apellido_materno = $request->apellido_materno;
         $varuser->asignatura = $request->asignatura;*/
-        //$varuser->save();
+        $varuser->save();
 
         //Flash::success("Se ha editado a:  " . $varuser->nombre . "  ,de forma exitosa");
         //return redirect()->route('Cliente.User.index');
