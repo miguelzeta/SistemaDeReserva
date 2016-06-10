@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bfe7d96-c143-4a54-8d2b-35dfdad798f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="2bfe7d96-c143-4a54-8d2b-35dfdad798f4" name="Default" comment="2 commit">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/MedicController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/Cliente/create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/Cliente/edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/Cliente/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/Cliente/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_06_09_195929_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_06_09_195929_create_users_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SistemaDeReserva.iws" />
@@ -27,6 +42,12 @@
     <option name="GROUP_BY_TYPE" value="true" />
     <option name="SORT_CHILDREN" value="false" />
     <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -34,21 +55,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.076923">
-              <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+            <state vertical-scroll-proportion="4.9583335">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#40#47#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/UserRequest.php">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="register.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26631853">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="138" column="43" selection-start-line="0" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <folding>
+                <element signature="e#23#59#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="51" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="51" />
+              <folding>
+                <element signature="e#7#392#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/Cliente/edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -81,19 +151,26 @@
         <option value="$PROJECT_DIR$/database/migrations/2016_06_09_200417_reserva.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_09_200453_trabaja.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_09_195929_create_user_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_06_09_195929_create_users_table.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Administrador/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Cliente/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Medico/app.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/factories/ModelFactory.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/database/factories/ModelFactory.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+        <option value="$PROJECT_DIR$/resources/views/Cliente/index.blade.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_06_09_195929_create_users_table.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/routing/RouteCollection.php" />
+        <option value="$PROJECT_DIR$/resources/views/Cliente/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/Cliente/edit.blade.php" />
       </list>
     </option>
   </component>
@@ -112,6 +189,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
@@ -138,6 +216,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -192,7 +272,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -210,10 +290,94 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SistemaDeReserva" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SistemaDeReserva" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SistemaDeReserva" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SistemaDeReserva" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SistemaDeReserva" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SistemaDeReserva" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SistemaDeReserva" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SistemaDeReserva" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SistemaDeReserva" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SistemaDeReserva" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Requests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,31 +426,39 @@
       <option name="number" value="Default" />
       <updated>1465481254008</updated>
     </task>
+    <task id="LOCAL-00001" summary="Ignorar">
+      <created>1465515062324</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1465515062324</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1378" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3323217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24355084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11760243" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11195159" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.83360523" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6574225" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -310,27 +482,31 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ignorar" />
+    <MESSAGE value="2 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -338,7 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -346,7 +521,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="22" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="e#23#59#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -357,29 +534,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.269231">
           <caret line="72" column="13" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/a7b41e0d/52a2ceae-fa29-49f3-afeb-e36cd973507d/db-SistemaDeReserva.dbo.users">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -429,20 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.856631">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33452594">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_09_195622_prevision.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9391771">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -509,31 +653,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.692307">
-          <caret line="69" column="24" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Administrador/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.692307">
           <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Cliente/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57423973">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21288015">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -548,7 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.807693">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -556,23 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49072164">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22886598">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -580,25 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.472165">
           <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7010309">
-          <caret line="20" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_09_195929_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5731959">
-          <caret line="24" column="90" selection-start-line="15" selection-start-column="11" selection-end-line="24" selection-end-column="90" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -606,31 +692,647 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84436494">
-          <caret line="139" column="38" selection-start-line="139" selection-start-column="38" selection-end-line="139" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.076923">
+        <state vertical-scroll-proportion="0.47207206">
           <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26631853">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.27868852">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4265233">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/52a2ceae-fa29-49f3-afeb-e36cd973507d">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>52a2ceae-fa29-49f3-afeb-e36cd973507d</OriginalElement>
+          <nodes>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_latch_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.medico</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_index_usage_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_tran_session_transactions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.system_parameters</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_requests</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_repl_schemas</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_xtp_table_memory_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysconstraints</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.events</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.extended_procedures</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.resource_governor_workload_groups</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.availability_group_listener_ip_addresses</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_query_resource_semaphores</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.foreign_key_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_mirroring_auto_page_repair</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xe_session_events</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.credentials</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_cryptographic_provider_properties</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.crypt_properties</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.system_components_surface_area_configuration</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_cdc_log_scan_sessions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.users</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_hadr_availability_replica_cluster_states</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_connections</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_query_transformation_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.routes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_repl_articles</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_ring_buffers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.selective_xml_index_namespaces</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.posee</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.endpoint_webmethods</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.fulltext_semantic_languages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.database_mirroring_endpoints</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_missing_index_group_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.event_notification_event_types</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.securable_classes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_persisted_sku_features</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.messages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.fulltext_system_stopwords</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sequences</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.resource_governor_configuration</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_buffer_pool_extension_configuration</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.database_permissions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_process_memory</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_query_memory_grants</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_loaded_modules</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_audit_class_type_map</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.system_views</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_tran_current_transaction</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.service_queues</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_cached_plans</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.spatial_index_tessellations</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sql_logins</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.via_endpoints</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.database_mirroring</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_script_level</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.numbered_procedure_parameters</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.default_constraints</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_hadr_cluster</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.spatial_reference_systems</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_session_space_usage</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.servers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_events</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.parameters</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_wait_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_resource_governor_resource_pools</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_broker_connections</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_assembly_modules</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_tran_top_version_generators</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xe_sessions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_tran_transactions_snapshot</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_memory_broker_clerks</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.trabaja</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_workers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_fts_memory_pools</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.trace_subclass_values</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_cluster_properties</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_sublatches</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_sys_memory</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.clinica</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.sucursal</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysmessages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.stats_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_memory_cache_entries</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_event_session_actions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.assembly_types</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_hadr_availability_replica_states</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_qn_subscriptions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.fulltext_stopwords</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.column_store_row_groups</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.SCHEMATA</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_hadr_availability_group_states</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_waiting_tasks</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.PARAMETERS</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_resource_governor_resource_pool_volumes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.fulltext_indexes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_clr_appdomains</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xe_map_values</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.availability_replicas</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.database_filestream_options</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_windows_info</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.soap_endpoints</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_fts_index_population</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysindexkeys</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_file_audits</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_cluster_nodes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syspermissions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.change_tracking_databases</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.availability_read_only_routing_lists</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.xml_schema_components</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_trigger_events</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_virtual_address_dump</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syscharsets</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.fulltext_languages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_dispatcher_pools</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.system_sql_modules</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_principals</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysaltfiles</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_missing_index_groups</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_hosts</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.xml_schema_component_placements</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_xtp_checkpoint_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_io_cluster_valid_path_names</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.service_contract_message_usages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.fulltext_index_catalog_usages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_memory_brokers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_tran_current_snapshot</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.permite</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sql_dependencies</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.VIEW_TABLE_USAGE</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.traces</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syscursors</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_event_notifications</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_clr_loaded_assemblies</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.filetable_system_defined_objects</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_io_backup_tapes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.xml_schema_facets</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_xtp_hash_index_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.check_constraints</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_background_job_queue</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_broker_activated_tasks</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xtp_system_memory_consumers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_audits</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_child_instances</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.TABLES</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_hadr_cluster_networks</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xe_objects</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.symmetric_keys</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.trace_event_bindings</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.objects</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.login_token</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.xml_schema_types</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.endpoints</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_hadr_name_id_map</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_schedulers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_file_space_usage</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_memory_allocations</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_threads</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_fts_semantic_similarity_population</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.assembly_modules</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysusers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_memory_cache_clock_hands</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.availability_groups</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_broker_forwarded_messages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.xml_schema_collections</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.password_resets</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.selective_xml_index_paths</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_partition_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_mirroring_past_actions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_memory_pools</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.tcp_endpoints</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.computed_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.fulltext_catalogs</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.service_contracts</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.xml_indexes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_event_sessions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.all_objects</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.fulltext_index_fragments</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_filestream_file_io_requests</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.conversation_priorities</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.trace_categories</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xtp_threads</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.DOMAIN_CONSTRAINTS</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_logpool_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.KEY_COLUMN_USAGE</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.types</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.change_tracking_tables</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.openkeys</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.fulltext_index_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_xtp_index_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_sql_modules</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.registered_search_property_lists</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.xml_schema_wildcards</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.availability_groups_cluster</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syslanguages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_worker_local_storage</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.database_files</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.table_types</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_audit_specification_details</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_permissions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syscacheobjects</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.type_assembly_usages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_tran_active_snapshot_database_transactions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysoledbusers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.conversation_groups</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysremotelogins</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.database_mirroring_witnesses</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.remote_logins</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.function_order_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.CHECK_CONSTRAINTS</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.hash_indexes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysobjects</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_xtp_object_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syslogins</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xe_session_event_actions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.service_message_types</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_xtp_memory_consumers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.user_token</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysconfigures</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.synonyms</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_role_members</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.xml_schema_model_groups</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysdevices</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.all_parameters</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_tasks</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.system_internals_partition_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_memory_node_access_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.xml_schema_namespaces</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.trigger_event_types</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.cliente</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_fts_active_catalogs</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.message_type_xml_schema_collection_usages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.DOMAINS</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syscurconfigs</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.TABLE_PRIVILEGES</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.allocation_units</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_event_session_events</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysfiles</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_xtp_checkpoint_files</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_dispatchers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysprocesses</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.VIEWS</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.column_store_segments</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_hadr_availability_replica_cluster_nodes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syscursorcolumns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_event_session_targets</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_filestream_non_transacted_handles</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysfilegroups</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xtp_gc_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.SEQUENCES</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.trigger_events</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.schemas</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.master_files</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.xml_schema_attributes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_server_registry</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_fts_memory_buffers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.fulltext_document_types</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_performance_counters</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.plan_guides</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_xtp_nonclustered_index_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_memory_objects</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_resource_governor_workload_groups</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_server_diagnostics_log_configurations</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.certificates</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xe_session_targets</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysmembers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syscursorrefs</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_stacks</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.cryptographic_providers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.system_objects</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysservers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.reserva</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_fts_population_ranges</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_fts_index_physical_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_buffer_descriptors</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_filestream_file_io_handles</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syslockinfo</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xtp_transaction_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_repl_traninfo</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.filetables</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.COLUMN_DOMAIN_USAGE</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_triggers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_server_memory_dumps</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.module_assembly_usages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_server_audit_status</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.parameter_xml_schema_collection_usages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.partition_parameters</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.fulltext_stoplists</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.ROUTINES</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syscomments</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.system_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.remote_service_bindings</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_event_session_fields</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sql_modules</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.filegroups</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.parameter_type_usages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_sessions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_clr_tasks</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.database_recovery_status</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_nodes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_tran_version_store</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_memory_cache_hash_tables</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_fts_outstanding_batches</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.partition_schemes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.foreign_keys</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.trace_xe_action_map</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_io_pending_io_requests</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_sys_info</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.migrations</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.master_key_passwords</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.numbered_procedures</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_broker_queue_monitors</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.prevision</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.availability_group_listeners</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_memory_clerks</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_hadr_database_replica_cluster_states</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysdatabases</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysdepends</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xtp_transaction_recent_rows</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_hadr_auto_page_repair</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.key_encryptions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_tran_commit_table</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.triggers</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.database_audit_specifications</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.internal_tables</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_spinlock_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.conversation_endpoints</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.databases</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.index_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.partition_functions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.backup_devices</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysfulltextcatalogs</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.database_principals</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.key_constraints</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xtp_gc_queue_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syscursortables</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.service_queue_usages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysindexes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_resource_governor_configuration</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.database_role_members</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_task_space_usage</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.column_xml_schema_collection_usages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_missing_index_details</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.tables</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_tran_locks</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_fts_fdhosts</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_audit_specifications</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_repl_tranhash</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.partitions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_uncontained_entities</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.assemblies</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.services</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_cdc_errors</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_background_job_queue_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.COLUMN_PRIVILEGES</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.event_notifications</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_xtp_transactions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xe_session_object_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.systypes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.extended_properties</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.configurations</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.service_contract_usages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.availability_databases_cluster</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.http_endpoints</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_hadr_cluster_members</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.partition_range_values</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysopentapes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_memory_nodes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.xml_schema_wildcard_namespaces</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_tran_database_transactions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_log_space_usage</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysprotects</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_tcp_listener_states</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.service_broker_endpoints</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.resource_governor_resource_pools</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.views</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.all_views</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_trigger_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.procedures</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_os_memory_cache_counters</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_io_cluster_shared_drives</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_query_optimizer_info</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.dbo.especialidad</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_query_profiles</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.trace_xe_event_map</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_clr_properties</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.system_internals_partitions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_resource_governor_resource_pool_affinity</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sql_expression_dependencies</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.all_sql_modules</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_hadr_instance_node_map</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.server_principal_credentials</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.trace_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.ROUTINE_COLUMNS</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.column_type_usages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.database_audit_specification_details</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.VIEW_COLUMN_USAGE</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xe_object_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.resource_governor_resource_pool_affinity</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_hadr_database_replica_states</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_xtp_gc_cycle_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.assembly_references</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.linked_logins</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.xml_schema_elements</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysperfinfo</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.syscolumns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_xtp_merge_requests</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_procedure_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.indexes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysreferences</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.registered_search_properties</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.destination_data_spaces</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.TABLE_CONSTRAINTS</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.trace_events</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.column_store_dictionaries</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_audit_actions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_tran_active_transactions</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_exec_query_stats</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.all_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.identity_columns</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.sysforeignkeys</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_database_encryption_keys</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.INFORMATION_SCHEMA.COLUMNS</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_logpool_hashentries</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.fulltext_semantic_language_statistics_database</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_server_services</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.transmission_queue</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.data_spaces</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_db_mirroring_connections</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.spatial_indexes</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.dm_xe_packages</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.assembly_files</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.system_internals_allocation_units</node>
+            <node x="" y="">52a2ceae-fa29-49f3-afeb-e36cd973507d.table:db-SistemaDeReserva.sys.asymmetric_keys</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.06098762728566736" x="4746.0" y="4557.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a7b41e0d/52a2ceae-fa29-49f3-afeb-e36cd973507d/db-SistemaDeReserva.dbo.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_09_195622_prevision.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.307693">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Cliente/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2795699">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_09_195929_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.153847">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Cliente/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3046595">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.576923">
+          <caret line="206" column="52" selection-start-line="206" selection-start-column="52" selection-end-line="206" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.923077">
+          <caret line="74" column="52" selection-start-line="66" selection-start-column="12" selection-end-line="74" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Cliente/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/routing/RouteCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03046595">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.467742">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Cliente/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03046595">
+          <caret line="9" column="105" selection-start-line="9" selection-start-column="105" selection-end-line="9" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#23#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/UserRequest.php">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="51" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="51" />
+          <folding>
+            <element signature="e#7#392#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="138" column="43" selection-start-line="0" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Cliente/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.9583335">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#47#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

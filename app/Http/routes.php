@@ -16,25 +16,42 @@
 
 
 Route::group(['middleware'=>['web']],function(){
+
     Route::auth();
+
     Route::get('/', function () {
         return view('welcome');
     });
 
     Route::get('/home', 'HomeController@index');
 
-    Route::get('administrador', function (){
-        return view('Administrador.app');
+
+
+    Route::group(['prefix'=>'Administrador'], function(){
+        Route::resource('Admin','AdminController');
     });
 
-    Route::get('cliente', function (){
-        return view('Cliente.app');
+    Route::group(['prefix'=>'Medico'], function(){
+        Route::resource('Medic','MedicController');
     });
-
-    Route::get('medico', function (){
-        return view('Medico.app');
+    Route::group(['prefix'=>'Cliente'], function(){
+        Route::resource('User','UsersController');
     });
-
 });
 
+//Route::get('editar/{id}','UsersController@edit');
+//Route::post('update/{id}','UsersController@update');
+/*
+  Route::get('administrador', function (){
+      return view('Administrador.app');
+  });
 
+Route::get('cliente', function (){
+      return view('Cliente.app');
+  });
+ Route::group(['prefix'=>'Cliente'], function(){
+        Route::resource('User','UsersController');
+    });
+  Route::get('medico', function (){
+      return view('Medico.app');
+  });*/

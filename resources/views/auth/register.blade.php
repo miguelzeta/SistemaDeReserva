@@ -128,7 +128,7 @@
 
 
                         <div class="form-group{{ $errors->has('ComunaUsuario') ? ' has-error' : '' }}">
-                            <label for="ApellidoMaternoUsuario" class="col-md-4 control-label">Comuna Usuario</label>
+                            <label for="ComunaUsuario" class="col-md-4 control-label">Comuna Usuario</label>
 
                             <div class="col-md-6">
                                 <input id="ComunaUsuario" type="text" class="form-control" name="ComunaUsuario" value="{{ old('ComunaUsuario') }}">

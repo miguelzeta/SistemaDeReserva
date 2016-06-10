@@ -14,3 +14,6 @@ class UserTableSeeder extends Seeder
         factory(App\User::class, 20)->create();
     }
 }
+
+
+//php artisan db:seed

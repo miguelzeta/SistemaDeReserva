@@ -321,6 +321,66 @@
       <column name="TABLE_SCHEMA" sqlType="nvarchar" precision="128" scale="0" nullable="true" jdbcType="-9"/>
       <column name="TABLE_NAME" sqlType="sysname" precision="128" scale="0" nullable="false" jdbcType="-9"/>
     </table>
+    <table name="cliente" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
+      <column name="RutUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="IdePrevision" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="name" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="DireccionUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="FonoUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="email" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="ApellidoPaternoUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="ApellidoMaternoUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="ComunaUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="password" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="FechaNacimientoCliente" sqlType="datetime" precision="23" scale="3" nullable="false" jdbcType="93"/>
+      <column name="remember_token" sqlType="nvarchar" precision="100" scale="0" nullable="true" jdbcType="-9"/>
+      <column name="created_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <primary-key name="cliente_rutusuario_primary" columns="RutUsuario"/>
+      <foreign-key name="cliente_ideprevision_foreign" columns="IdePrevision" ref-table="prevision" ref-schema="dbo" ref-catalog="db-SistemaDeReserva" ref-columns="IdPrevision" update-rule="1" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="clinica" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
+      <column name="IdClinica" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="NombreClinica" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="remember_token" sqlType="nvarchar" precision="100" scale="0" nullable="true" jdbcType="-9"/>
+      <column name="created_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <primary-key name="clinica_idclinica_primary" columns="IdClinica"/>
+      <exported-key name="permite_idclinica_foreign" table="permite" schema="dbo" catalog="db-SistemaDeReserva" columns="IdClinica"/>
+      <exported-key name="sucursal_idclinica_foreign" table="sucursal" schema="dbo" catalog="db-SistemaDeReserva" columns="IdClinica"/>
+      <index name="clinica_idclinica_unique" unique="true" columns="IdClinica"/>
+    </table>
+    <table name="especialidad" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
+      <column name="IdEspecialidad" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="NombreEspecialidad" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="remember_token" sqlType="nvarchar" precision="100" scale="0" nullable="true" jdbcType="-9"/>
+      <column name="created_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <primary-key name="especialidad_idespecialidad_primary" columns="IdEspecialidad"/>
+      <exported-key name="posee_idespecialidad_foreign" table="posee" schema="dbo" catalog="db-SistemaDeReserva" columns="IdEspecialidad"/>
+      <exported-key name="trabaja_idespecialidad_foreign" table="trabaja" schema="dbo" catalog="db-SistemaDeReserva" columns="IdEspecialidad"/>
+      <index name="especialidad_idespecialidad_unique" unique="true" columns="IdEspecialidad"/>
+    </table>
+    <table name="medico" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
+      <column name="RutUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="IdePrevision" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="name" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="DireccionUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="FonoUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="email" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="ApellidoPaternoUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="ApellidoMaternoUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="ComunaUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="password" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="DetallePerfilMedico" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="remember_token" sqlType="nvarchar" precision="100" scale="0" nullable="true" jdbcType="-9"/>
+      <column name="created_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <primary-key name="medico_rutusuario_primary" columns="RutUsuario"/>
+      <exported-key name="posee_rutusuario_foreign" table="posee" schema="dbo" catalog="db-SistemaDeReserva" columns="RutUsuario"/>
+      <exported-key name="reserva_med_rutusuario_foreign" table="reserva" schema="dbo" catalog="db-SistemaDeReserva" columns="Med_RutUsuario"/>
+      <exported-key name="trabaja_rutusuario_foreign" table="trabaja" schema="dbo" catalog="db-SistemaDeReserva" columns="RutUsuario"/>
+    </table>
     <table name="migrations" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
       <column name="migration" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
       <column name="batch" sqlType="int" precision="10" scale="0" nullable="false" jdbcType="4"/>
@@ -332,16 +392,100 @@
       <index name="password_resets_email_index" unique="true" columns="email"/>
       <index name="password_resets_token_index" unique="true" columns="token"/>
     </table>
-    <table name="users" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
-      <column name="id" sqlType="int identity" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="name" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
-      <column name="email" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
-      <column name="password" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+    <table name="permite" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
+      <column name="IdPrevision" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="IdClinica" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
       <column name="remember_token" sqlType="nvarchar" precision="100" scale="0" nullable="true" jdbcType="-9"/>
       <column name="created_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
       <column name="updated_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
-      <primary-key name="PK__users__3213E83FCDD9E555" columns="id"/>
+      <primary-key name="permite_idprevision_idclinica_primary" columns="IdPrevision,IdClinica"/>
+      <foreign-key name="permite_idclinica_foreign" columns="IdClinica" ref-table="clinica" ref-schema="dbo" ref-catalog="db-SistemaDeReserva" ref-columns="IdClinica" update-rule="1" delete-rule="0" deferrability="2"/>
+      <foreign-key name="permite_idprevision_foreign" columns="IdPrevision" ref-table="prevision" ref-schema="dbo" ref-catalog="db-SistemaDeReserva" ref-columns="IdPrevision" update-rule="1" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="posee" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
+      <column name="IdEspecialidad" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="RutUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="FechaEgreso" sqlType="datetime" precision="23" scale="3" nullable="false" jdbcType="93"/>
+      <column name="Institucion" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="remember_token" sqlType="nvarchar" precision="100" scale="0" nullable="true" jdbcType="-9"/>
+      <column name="created_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <primary-key name="posee_idespecialidad_rutusuario_primary" columns="IdEspecialidad,RutUsuario"/>
+      <foreign-key name="posee_idespecialidad_foreign" columns="IdEspecialidad" ref-table="especialidad" ref-schema="dbo" ref-catalog="db-SistemaDeReserva" ref-columns="IdEspecialidad" update-rule="1" delete-rule="0" deferrability="2"/>
+      <foreign-key name="posee_rutusuario_foreign" columns="RutUsuario" ref-table="medico" ref-schema="dbo" ref-catalog="db-SistemaDeReserva" ref-columns="RutUsuario" update-rule="1" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="prevision" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
+      <column name="IdPrevision" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="NombrePrevision" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="TipoPrevision" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="remember_token" sqlType="nvarchar" precision="100" scale="0" nullable="true" jdbcType="-9"/>
+      <column name="created_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <primary-key name="prevision_idprevision_primary" columns="IdPrevision"/>
+      <exported-key name="cliente_ideprevision_foreign" table="cliente" schema="dbo" catalog="db-SistemaDeReserva" columns="IdePrevision"/>
+      <exported-key name="permite_idprevision_foreign" table="permite" schema="dbo" catalog="db-SistemaDeReserva" columns="IdPrevision"/>
+      <index name="prevision_idprevision_unique" unique="true" columns="IdPrevision"/>
+    </table>
+    <table name="reserva" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
+      <column name="Med_RutUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="RutUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="IdSucursal" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="FechaReserva" sqlType="datetime" precision="23" scale="3" nullable="false" jdbcType="93"/>
+      <column name="HoraReserva" sqlType="datetime" precision="23" scale="3" nullable="false" jdbcType="93"/>
+      <column name="remember_token" sqlType="nvarchar" precision="100" scale="0" nullable="true" jdbcType="-9"/>
+      <column name="created_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <primary-key name="reserva_med_rutusuario_rutusuario_idsucursal_primary" columns="Med_RutUsuario,RutUsuario,IdSucursal"/>
+      <foreign-key name="reserva_med_rutusuario_foreign" columns="Med_RutUsuario" ref-table="medico" ref-schema="dbo" ref-catalog="db-SistemaDeReserva" ref-columns="RutUsuario" update-rule="1" delete-rule="0" deferrability="2"/>
+      <foreign-key name="reserva_idsucursal_foreign" columns="IdSucursal" ref-table="sucursal" ref-schema="dbo" ref-catalog="db-SistemaDeReserva" ref-columns="IdSucursal" update-rule="1" delete-rule="0" deferrability="2"/>
+      <foreign-key name="reserva_rutusuario_foreign" columns="RutUsuario" ref-table="users" ref-schema="dbo" ref-catalog="db-SistemaDeReserva" ref-columns="RutUsuario" update-rule="1" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="sucursal" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
+      <column name="IdSucursal" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="IdClinica" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="NombreSucursal" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="DireccionSucursal" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="ComunaSucursal" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="remember_token" sqlType="nvarchar" precision="100" scale="0" nullable="true" jdbcType="-9"/>
+      <column name="created_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <primary-key name="sucursal_idsucursal_primary" columns="IdSucursal"/>
+      <foreign-key name="sucursal_idclinica_foreign" columns="IdClinica" ref-table="clinica" ref-schema="dbo" ref-catalog="db-SistemaDeReserva" ref-columns="IdClinica" update-rule="1" delete-rule="0" deferrability="2"/>
+      <exported-key name="reserva_idsucursal_foreign" table="reserva" schema="dbo" catalog="db-SistemaDeReserva" columns="IdSucursal"/>
+      <exported-key name="trabaja_idsucursal_foreign" table="trabaja" schema="dbo" catalog="db-SistemaDeReserva" columns="IdSucursal"/>
+      <index name="sucursal_idsucursal_unique" unique="true" columns="IdSucursal"/>
+    </table>
+    <table name="trabaja" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
+      <column name="IdEspecialidad" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="IdSucursal" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="RutUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="FechaIngreso" sqlType="datetime" precision="23" scale="3" nullable="false" jdbcType="93"/>
+      <column name="FechaEgreso" sqlType="datetime" precision="23" scale="3" nullable="false" jdbcType="93"/>
+      <column name="remember_token" sqlType="nvarchar" precision="100" scale="0" nullable="true" jdbcType="-9"/>
+      <column name="created_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <primary-key name="trabaja_idespecialidad_idsucursal_rutusuario_primary" columns="IdEspecialidad,IdSucursal,RutUsuario"/>
+      <foreign-key name="trabaja_idespecialidad_foreign" columns="IdEspecialidad" ref-table="especialidad" ref-schema="dbo" ref-catalog="db-SistemaDeReserva" ref-columns="IdEspecialidad" update-rule="1" delete-rule="0" deferrability="2"/>
+      <foreign-key name="trabaja_rutusuario_foreign" columns="RutUsuario" ref-table="medico" ref-schema="dbo" ref-catalog="db-SistemaDeReserva" ref-columns="RutUsuario" update-rule="1" delete-rule="0" deferrability="2"/>
+      <foreign-key name="trabaja_idsucursal_foreign" columns="IdSucursal" ref-table="sucursal" ref-schema="dbo" ref-catalog="db-SistemaDeReserva" ref-columns="IdSucursal" update-rule="1" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="users" schema="dbo" catalog="db-SistemaDeReserva" type="TABLE">
+      <column name="RutUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="name" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="DireccionUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="FonoUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="email" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="ApellidoPaternoUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="ApellidoMaternoUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="ComunaUsuario" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="password" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9"/>
+      <column name="type" sqlType="nvarchar" precision="255" scale="0" nullable="false" jdbcType="-9" def="JygnY2xpZW50ZScpJw=="/>
+      <column name="remember_token" sqlType="nvarchar" precision="100" scale="0" nullable="true" jdbcType="-9"/>
+      <column name="created_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="datetime" precision="23" scale="3" nullable="true" jdbcType="93"/>
+      <exported-key name="reserva_rutusuario_foreign" table="reserva" schema="dbo" catalog="db-SistemaDeReserva" columns="RutUsuario"/>
       <index name="users_email_unique" unique="true" columns="email"/>
+      <index name="users_rutusuario_unique" unique="true" columns="RutUsuario"/>
     </table>
     <table name="all_columns" schema="sys" catalog="db-SistemaDeReserva" type="VIEW">
       <column name="object_id" sqlType="int" precision="10" scale="0" nullable="false" jdbcType="4"/>

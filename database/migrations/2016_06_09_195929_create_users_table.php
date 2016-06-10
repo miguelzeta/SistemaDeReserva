@@ -25,6 +25,9 @@ class CreateUsersTable extends Migration
             $table->enum('type',['administrador','cliente','medico'])->default('cliente');
             $table->rememberToken();
             $table->timestamps();
+
+
+            $table->primary('RutUsuario');
         });
     }
 
