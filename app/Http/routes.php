@@ -13,7 +13,20 @@
 
 
 
+Route::get('/',function(){
+    return view('welcome');
+});
 
+Route::auth();
+Route::get('/home','HomeController@index');
+
+Route::group(['prefix'=>'admin','middleware'=>['auth','is_admin']],function(){
+    Route::get('/','AdminController@index');
+});
+
+
+
+/*
 
 Route::group(['middleware'=>['web']],function(){
 
@@ -60,5 +73,5 @@ Route::group(['middleware'=>['web']],function(){
 
 
 });
-
+*/
 
