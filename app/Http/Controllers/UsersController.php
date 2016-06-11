@@ -8,6 +8,7 @@ use App\User;// LLAMA AL MODELO QUE VA A CONTROLAR PARA GUARDAR
 use App\Http\Requests\UserRequest; //LLAMA AL REQUEST QUE VA A UTILIZAR
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\Controller;
+use Laracasts\Flash\Flash;
 
 class UsersController extends Controller
 {
@@ -86,7 +87,7 @@ class UsersController extends Controller
         $varuser->asignatura = $request->asignatura;*/
         $varuser->save();
 
-        //Flash::success("Se ha editado a:  " . $varuser->nombre . "  ,de forma exitosa");
+        Flash::success("Se ha editado a:  " . $varuser->name . "  ,de forma exitosa");
         return redirect()->route('Cliente.User.index');
     }
 /*
@@ -99,7 +100,7 @@ class UsersController extends Controller
         $varuser =User::findOrFail($id);
         $varuser -> delete();
 
-        //Flash::success("Se ha eliminado a:  " . $varuser->nombre . "  ,de forma exitosa");
+        Flash::success("Se ha eliminado a:  " . $varuser->name . "  ,de forma exitosa");
         return redirect()->route('Cliente.User.index');
     }
 
