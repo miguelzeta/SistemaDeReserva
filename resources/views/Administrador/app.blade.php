@@ -26,7 +26,7 @@
     </style>
 </head>
 <body id="app-layout">
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
         <div class="navbar-header">
 
@@ -50,11 +50,15 @@
                 <li><a href="{{ url('/') }}">Inicio</a></li>
             </ul>
             <ul class="nav navbar-nav">
-                <li><a href="{{ url('/Cliente/User') }}">Administrar Usuarios</a></li>
+                <li><a href="{{ url('/Cliente/User') }}">Administrar Clientes</a></li>
             </ul>
 
             <ul class="nav navbar-nav">
                 <li><a href="{{ url('/Medico/Medic/create') }}">Registrar Médico</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li><a href="{{ url('/Medico/Medic/') }}">Administrar Medicos</a></li>
             </ul>
 
 

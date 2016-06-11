@@ -9,7 +9,7 @@
 
 
 
-    <!--creacion del formulario   'route' => 'admin.users.store', 'method' => 'POST'-->
+
 
     <div class="container-fluid">
         {!! Form::model($usuario,['route'=>['Cliente.User.update',$usuario],'method'=> 'PUT','class' =>'form-horizontal']) !!}

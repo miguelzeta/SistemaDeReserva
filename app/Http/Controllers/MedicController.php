@@ -16,9 +16,9 @@ class MedicController extends Controller
     // MUESTRA LISTA DE USUARIOS
     public function index()
     {
-        $varuser = User::orderBy('ApellidoPaternoUsuario', 'ASC')->paginate(4);
+        $varuser = Medico::orderBy('ApellidoPaternoUsuario', 'ASC')->paginate(4);
 
-        return view('Cliente.index', compact('varuser'));
+        return view('Medico.index', compact('varuser'));
     }
 
 
@@ -59,9 +59,9 @@ class MedicController extends Controller
     // MUESTRA A UN USUARIO POR SU RUT
     public function show($id)
     {
-        $varuser = User::find($id);
+        $varuser = Medico::find($id);
 
-        return view('Cliente.show', compact('varuser'));
+        return view('Medico.show', compact('varuser'));
     }
 
 
@@ -69,14 +69,14 @@ class MedicController extends Controller
     public function edit($id)
     {
 
-        $usuario = User::findOrFail($id);
-        return view('Cliente.edit',array('usuario'=>$usuario));
+        $usuario = Medico::findOrFail($id);
+        return view('Medico.edit',array('usuario'=>$usuario));
     }
 
     // ACTUALIZA LA INFORMACION DEl FORMULARIO EDITA
-    public function update(UserRequest $request, $id)
+    public function update(MedicRequest $request, $id)
     {
-        $varuser = User::find($id);
+        $varuser = Medico::find($id);
         $varuser->fill($request->all());
         /*$varuser->nombre = $request->nombre;
         $varuser->apellido_paterno = $request->apellido_paterno;
@@ -85,18 +85,18 @@ class MedicController extends Controller
         $varuser->save();
 
         //Flash::success("Se ha editado a:  " . $varuser->nombre . "  ,de forma exitosa");
-        return redirect()->route('Cliente.User.index');
+        //return redirect()->route('Cliente.User.index');
     }
 
 
     // ELIMINA UN USUARIO
     public function destroy($id)
     {
-        $varuser = User::find($id);
+        $varuser = Medico::findOrFail($id);
         $varuser -> delete();
 
         //Flash::success("Se ha eliminado a:  " . $varuser->nombre . "  ,de forma exitosa");
-        return redirect()->route('Cliente.User.index');
+        //return redirect()->route('Cliente.User.index');
     }
 
 }
