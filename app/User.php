@@ -28,7 +28,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         'ApellidoMaternoUsuario',
         'ComunaUsuario',
         'password',
-        'is_admin',
+        'type',
 
     ];
 

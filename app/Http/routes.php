@@ -23,6 +23,12 @@ Route::get('/home','HomeController@index');
 Route::group(['prefix'=>'admin','middleware'=>['auth','is_admin']],function(){
     Route::get('/','AdminController@index');
 });
+Route::group(['prefix'=>'client','middleware'=>['auth','is_client']],function(){
+    Route::get('/','AdminController@create');
+});
+Route::group(['prefix'=>'medic','middleware'=>['auth','is_medic']],function(){
+    Route::get('/','AdminController@show');
+});
 
 
 
