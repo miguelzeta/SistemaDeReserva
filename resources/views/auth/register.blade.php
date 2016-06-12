@@ -5,15 +5,20 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Registro</div>
+                    <div class="panel-heading">Registro
+                        <br>
+                    <span>Todos los Campos son Obligatorios</span>
+                    </div>
+
                     <div class="panel-body">
                         <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                             {{ csrf_field() }}
+
                             <div class="form-group{{ $errors->has('RutUsuario') ? ' has-error' : '' }}">
                                 <label for="RutUsuario" class="col-md-4 control-label">Rut</label>
 
                                 <div class="col-md-6">
-                                    <input id="RutUsuario" type="text" class="form-control" name="RutUsuario" value="{{ old('RutUsuario') }}"  required/>
+                                    <input id="RutUsuario" type="number" class="form-control" name="RutUsuario" value="{{ old('RutUsuario') }}" placeholder="Sin Puntos ni guion" required/>
                                     @if ($errors->has('RutUsuario'))
                                         <span class="help-block">
                                         <strong>{{ $errors->first('RutUsuario') }}</strong>
@@ -24,7 +29,7 @@
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                 <label for="name" class="col-md-4 control-label">Nombre</label>
                                 <div class="col-md-6">
-                                    <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}"  required/>
+                                    <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required/>
                                     @if ($errors->has('name'))
                                         <span class="help-block">
                                         <strong>{{ $errors->first('name') }}</strong>
@@ -79,7 +84,7 @@
                             <div class="form-group{{ $errors->has('FonoUsuario') ? ' has-error' : '' }}">
                                 <label for="FonoUsuario" class="col-md-4 control-label">Telefono</label>
                                 <div class="col-md-6">
-                                    <input id="FonoUsuario" type="text" class="form-control" name="FonoUsuario" value="{{ old('FonoUsuario') }}" required/>
+                                    <input id="FonoUsuario" type="number" class="form-control" name="FonoUsuario" value="{{ old('FonoUsuario') }}" required/>
                                     @if ($errors->has('FonoUsuario'))
                                         <span class="help-block">
                                         <strong>{{ $errors->first('FonoUsuario') }}</strong>

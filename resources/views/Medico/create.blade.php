@@ -7,7 +7,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Registro de nuevo Médico</div>
                     <div class="panel-body">
-                        <form class="form-horizontal" role="form" method="POST" action="{{ url('/Admin') }}">
+                        <form class="form-horizontal" role="form" method="POST" action="{{ url('/Administrador/Medic') }}">
                             {{ csrf_field() }}
                             <div class="form-group{{ $errors->has('RutUsuario') ? ' has-error' : '' }}">
                                 <label for="RutUsuario" class="col-md-4 control-label">Rut</label>

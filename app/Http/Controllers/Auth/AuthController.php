@@ -30,6 +30,12 @@ class AuthController extends Controller
      */
     protected $redirectTo = '/';
 
+public function redirigir(){
+    if(\Auth::User()->type=='is_client'){
+
+    }
+
+}
     /**
      * Create a new authentication controller instance.
      *
@@ -49,9 +55,15 @@ class AuthController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
+            'RutUsuario' => 'required|max:9|min:8|numeric|unique:users',
+            'name' => 'required|max:255|min:4|alpha',
+            'ApellidoPaternoUsuario' => 'required|alpha|max:255',
+            'ApellidoMaternoUsuario' => 'required|alpha|max:255',
+            'DireccionUsuario' => 'required|max:255',
+            'ComunaUsuario' => 'required|alpha|max:255',
+            'FonoUsuario' => 'required|numeric',
             'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed',
+            'password' =>'required|min:6|confirmed',
         ]);
     }
 

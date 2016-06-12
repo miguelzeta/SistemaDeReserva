@@ -42,8 +42,8 @@ class MedicController extends Controller
 
 
         //Flash::success("Se ha registrado de forma exitosa");
- echo 'registrado';
-        //return redirect()->route('Cliente.User.index');
+
+        return redirect()->route('Administrador.Medic.index');
         /*if ($exito) {
             $varuser = Usuario::orderBy('apellido_paterno', 'ASC')->paginate(2);
 
@@ -85,7 +85,7 @@ class MedicController extends Controller
         $varuser->save();
 
         //Flash::success("Se ha editado a:  " . $varuser->nombre . "  ,de forma exitosa");
-        //return redirect()->route('Cliente.User.index');
+        return redirect()->route('Administrador.Medic.index');
     }
 
 
@@ -96,7 +96,7 @@ class MedicController extends Controller
         $varuser -> delete();
 
         //Flash::success("Se ha eliminado a:  " . $varuser->nombre . "  ,de forma exitosa");
-        //return redirect()->route('Cliente.User.index');
+        return redirect()->route('Administrador.Medic.index');
     }
 
 }

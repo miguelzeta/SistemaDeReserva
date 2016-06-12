@@ -52,15 +52,15 @@
                 <li><a href="{{ url('/') }}">Inicio</a></li>
             </ul>
             <ul class="nav navbar-nav">
-                <li><a href="{{ url('/Cliente/User') }}">Administrar Clientes</a></li>
+                <li><a href="{{ url('/Administrador/User') }}">Administrar Clientes</a></li>
             </ul>
 
             <ul class="nav navbar-nav">
-                <li><a href="{{ url('/Medico/Medic/create') }}">Registrar Médico</a></li>
+                <li><a href="{{ url('/Administrador/Medic/create') }}">Registrar Médico</a></li>
             </ul>
 
             <ul class="nav navbar-nav">
-                <li><a href="{{ url('/Medico/Medic/') }}">Administrar Medicos</a></li>
+                <li><a href="{{ url('/Administrador/Medic/') }}">Administrar Medicos</a></li>
             </ul>
 
 

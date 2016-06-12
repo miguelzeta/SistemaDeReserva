@@ -1,1 +1,8 @@
-<h1>Usted no tiene permisos de ingresar en esta zona</h1>
+@extends('layouts.app')
+
+@section('content')
+
+<h1>Usted No tiene acceso a esta zona </h1>
+
+
+@endsection

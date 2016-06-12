@@ -20,14 +20,42 @@ Route::get('/',function(){
 Route::auth();
 Route::get('/home','HomeController@index');
 
-Route::group(['prefix'=>'admin','middleware'=>['auth','is_admin']],function(){
-    Route::get('/','AdminController@index');
+Route::group(['prefix'=>'Administrador','middleware'=>['auth','is_admin']],function(){
+    Route::resource('User','UsersController');
+
+    Route::get('User/{RutUsuario}/destroy',[
+        'uses'=>'UsersController@destroy',
+        'as'=>'Cliente.User.destroy'
+    ]);
+
+    Route::resource('Medic','MedicController');
+
+    Route::get('Medic/{RutUsuario}/destroy',[
+        'uses'=>'MedicController@destroy',
+        'as'=>'Medico.Medic.destroy'
+    ]);
+
+
+
+    Route::get('Admin', function() {
+        return view('Administrador.app');
+    });
 });
-Route::group(['prefix'=>'client','middleware'=>['auth','is_client']],function(){
-    Route::get('/','AdminController@create');
+Route::group(['prefix'=>'Cliente','middleware'=>['auth','is_client']],function(){
+    Route::resource('User','UsersController');
+
+    Route::get('User/{RutUsuario}/destroy',[
+        'uses'=>'UsersController@destroy',
+        'as'=>'Cliente.User.destroy'
+    ]);
 });
-Route::group(['prefix'=>'medic','middleware'=>['auth','is_medic']],function(){
-    Route::get('/','AdminController@show');
+Route::group(['prefix'=>'Medico','middleware'=>['auth','is_medic']],function(){
+    Route::resource('Medic','MedicController');
+
+    Route::get('Medic/{RutUsuario}/destroy',[
+        'uses'=>'MedicController@destroy',
+        'as'=>'Medico.Medic.destroy'
+    ]);
 });
 
 

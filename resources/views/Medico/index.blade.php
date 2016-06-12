@@ -6,7 +6,7 @@
 
 
 <!-- en href se enlazan las url se direcionan-->
-<a href="{{route('Medico.Medic.create')}}" class="btn btn-info">Registrar Nuevo Medico</a><hr>
+<a href="{{route('Administrador.Medic.create')}}" class="btn btn-info">Registrar Nuevo Medico</a><hr>
 <!--SE CREA EL ESQUEMA DE LA TABLA-->
 <div class="container-fluid"> <table class="table table-bordered" >
         <th>Rut</th>
@@ -32,7 +32,7 @@
                 <td>{!!  $usuario->ApellidoMaternoUsuario !!}</td>
                 <td>{!!  $usuario->ComunaUsuario !!}</td>
                 <td>{!!  $usuario->DetallePerfilMedico !!}</td>
-                <td> <a href="{{route('Medico.Medic.edit',$usuario->RutUsuario)}}" class="btn btn-warning">Editar</a><a href="{{route('Medico.Medic.destroy',$usuario->RutUsuario)}}" onclick="return confirm('¿Seguro Desea Eliminar Medico ?')" class="btn btn-danger">Eliminar</a></td>
+                <td> <a href="{{route('Administrador.Medic.edit',$usuario->RutUsuario)}}" class="btn btn-warning">Editar</a><a href="{{route('Administrador.Medic.destroy',$usuario->RutUsuario)}}" onclick="return confirm('¿Seguro Desea Eliminar Medico ?')" class="btn btn-danger">Eliminar</a></td>
             </tr>
         @endforeach
         </tbody>
