@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="/favicon1.ico">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,7 +52,7 @@
                     <li><a href="{{ url('/') }}">Inicio</a></li>
                 </ul>
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/Administrador/Admin    ') }}">Administrador</a></li>
+                    <li><a href="{{ url('/Administrador/Admin') }}">Administrador</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -59,6 +60,7 @@
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>
+
                         <li><a href="{{ url('/register') }}">Registro</a></li>
                     @else
                         <li class="dropdown">

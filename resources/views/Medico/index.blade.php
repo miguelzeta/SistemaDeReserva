@@ -32,7 +32,7 @@
                 <td>{!!  $usuario->ApellidoMaternoUsuario !!}</td>
                 <td>{!!  $usuario->ComunaUsuario !!}</td>
                 <td>{!!  $usuario->DetallePerfilMedico !!}</td>
-                <td> <a href="{{route('Administrador.Medic.edit',$usuario->RutUsuario)}}" class="btn btn-warning">Editar</a><a href="{{route('Administrador.Medic.destroy',$usuario->RutUsuario)}}" onclick="return confirm('¿Seguro Desea Eliminar Medico ?')" class="btn btn-danger">Eliminar</a></td>
+                <td> <a href="{{route('Administrador.Medic.edit',$usuario->RutUsuario)}}" class="btn btn-warning">Editar<span class="glyphicon glyphicon-copy"></span></a><a href="{{route('Administrador.Medic.destroy',$usuario->RutUsuario)}}" onclick="return confirm('¿Seguro Desea Eliminar Medico ?')" class="btn btn-danger">Eliminar<span class="glyphicon glyphicon-remove"></span></a></td>
             </tr>
         @endforeach
         </tbody>
